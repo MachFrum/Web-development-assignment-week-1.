@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- text -->
+        <meta charset="UTF-8"> <! I added this to ensure that characters are well displayed especially some "custom" ones I've added. >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <! I added this to ensure that the page is rendered in the highest mode available. >
+        <meta name="description" content="Peter's Week 1 Web Dev assignment."> <! I added this to give a brief description of the page. >
+        <meta name="author" content="Peter"> <! I added this to give credit to the author of the page, which is me, hehe. >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <! I added this to ensure that the page is responsive on all devices. >
+        <meta name="description" content="web development, software engineering, movies, games, books."> <! I added this to give a brief description of the page  and some SEO advantage. >
+        <title> Peter's Week 1 Web Dev assignment. </title>
+    </head>
+
+    <style>
+        /* Couldn't let my content just look plain, I know this is not yet tackled in class so I'll just play around with the way bullet points look. */  
+        /* The comments on this section are different from the rest of the comments in the code because I'm using CSS here. */
+            
+            /* Style 1 */
+            ul.arrow-bullets {
+            list-style-type: none; /* Removes default bullet */
+            padding-left: 0; /* Removes extra space */
+            } 
+            ul.arrow-bullets li::before {
+                content: "➜"; /* Unicode arrow symbol */
+                color: blue; /* Change color */
+                font-size: 1em; /* Adjust size */
+                margin-right: 5px; /* Add space */
+            }
+            ul.arrow-bullets li {
+                margin-bottom: 5px; /* Add space between bullets */
+            }
+
+            /* Style 2 */
+            ul.square-bullets {
+            list-style-type: none; /* Removes default bullet */
+            padding-left: 0; /* Removes extra space */
+            }
+            
+            ul.square-bullets li::before {
+                content: "▹"; /* Unicode square symbol */
+                color: red; /* Change color */
+                font-size: 1.2em; /* Adjust size */
+                margin-right: 5px; /* Add space */
+            }
+            ul.square-bullets li {
+                margin-bottom: 10px; /* Add space between bullets */
+            }
+
+            /* Style 3 */
+            ul.circle-bullets {
+            list-style-type: none; /* Removes default bullet */
+            padding-left: 0; /* Removes extra space */
+            }
+
+            ul.circle-bullets li::before {
+            content: "◉"; /* Custom bullet (Unicode circle) */
+            color: rgb(195, 16, 230); /* Change to any color */
+            font-size: 1.2em; /* Adjust size */
+            margin-right: 8px; /* Space between bullet and text */
+            }  
+            
+            /* Style 4 */
+            ul.star-bullets {
+            list-style-type: none; /* Removes default bullet */     
+            padding-left: 0; /* Removes extra space */
+            }
+            ul.star-bullets li::before {
+            content: "★"; /* Unicode star symbol */    
+            color: rgb(243, 212, 15); /* Change color */
+            font-size: 1.2em; /* Adjust size */
+            margin-right: 5px; /* Add space */
+            }   
+            ul.star-bullets li {
+            margin-bottom: 5px; /* Add space between bullets */
+            }
+
+        </style>
+
+    <body>
+
+        <header>
+            <h1> Welcome to the first (Week 1) web development assignment. </h1>
+            <p> This is my first web development assignment. I am excited to learn more about web development. </p>
+        </header>
+
+        <main>
+
+            <section id="about">
+                <h2> About me </h2>
+                <p> Hi, I'm Peter. I studied at Kenyatta University and I'm now learning Software Engineering at PLP. Let me tell you a little about myself.</p>
+            </section>
+
+            <section id="hobbies">
+                <h3> 
+                    <ul class="circle-bullets">
+                        <li> My hobbies.</li>
+                    </ul>
+                </h3>
+                <p> I'm a big fan of video games, books, and movies. Check out these links for some stuff I really like. </p>
+                
+                <h4>1. My best movies/series of 2024.</h4>
+                <h4>PS. The best sci-fi series 2 is quiet extra.</h4>
+                <nav>
+                    <ul class="arrow-bullets">
+                        <li><a href="#https://www.hulu.com/series/the-orville-21e70fbf-6a51-41b3-88e9-f111830b046c">Best Sci-fi movie of 2024 (1)</a></li>
+                        <li><a href="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3">Best Sci-fi movie of 2024 (2)</a></li>
+                        <li><a href="https://www.primevideo.com/detail/The-Day-of-the-Jackal/0ROUOWZMHOPJ3U78PWMZ4NAYPF">Best Action thriller.</a></li>
+                    </ul>
+                </nav>
+
+                <h4>2. My best games of 2024. </h4>
+                <nav>
+                    <ul class="square-bullets">
+                        <li><a href="https://www.playstation.com/en-us/games/horizon-forbidden-west/">Best RPG game of 2024.</a></li>
+                        <li><a href="https://www.playstation.com/en-us/games/god-of-war-ragnarok/">Best Action game of 2024.</a></li>
+                        <li><a href="https://store.steampowered.com/app/230410/Warframe/">The game I clocked the most hours in 2024.</a></li>
+                        <li><a href="https://store.steampowered.com/app/394510/HELLDIVERS_Dive_Harder_Edition/">Best Multiplayer game of 2024.</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <section id="goals">
+                <h3>
+                    <ul class="star-bullets">
+                        <li> My goals</li>
+                    </ul>
+                </h3>
+                <p> My goal is to become a software developer as I have some Ideas I'd like to execute. </p>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact me: mpeter778@gmail.com</p>
+            <p>&copy; 2025 Peter</p>
+        </footer>
+    </body>
+</html>
